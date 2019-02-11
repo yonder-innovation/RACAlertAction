@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RACAlertAction"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "UIAlertAction subclass with support for ReactiveCocoa"
   s.description  = <<-DESC
                    iOS 8 introduced `UIAlertController`, an abstraction above and replacement
@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.author             = { "Ash Furrow" => "ash@ashfurrow.com" }
   s.social_media_url   = "http://twitter.com/ashfurrow"
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/ashfurrow/RACAlertAction.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/yonder-innovation/RACAlertAction.git", :tag => s.version }
   s.source_files  = "RACAlertAction.{h,m}"
   s.framework  = "Foundation", "UIKit"
   s.requires_arc = true
-  s.dependency "ReactiveCocoa"
+  s.dependency "ReactiveObjC",    "~> 3.0"
 
 end
